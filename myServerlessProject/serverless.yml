@@ -1,0 +1,12 @@
+app: your-app
+org: your-serverless-account
+
+service: myserverlessproject
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello:
+    handler: handler.hello
