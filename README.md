@@ -12,4 +12,5 @@ Referensi Pembelajaran :
 2. https://www.youtube.com/watch?v=sku9Rrci-tE
 3. https://www.youtube.com/watch?v=8dc72i41r1A
 4. https://www.youtube.com/watch?v=Jruqo0KVOWk
-5. 
+5. https://www.youtube.com/watch?v=1de8NkTseqM
+6. 
