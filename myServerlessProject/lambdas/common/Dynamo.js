@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+const { write } = require('fs');
 
 const documentClient = new AWS.DynamoDB.DocumentClient();
 
@@ -20,6 +21,25 @@ const Dynamo = {
         console.log(data);
 
         return data.Item;
+    },
+
+    async write (data, TableName){
+        if (!data.ID){
+            throw Error('Tidak ada ID dalam data');
+        }
+
+        const params = {
+            TableName,
+            Item: data
+        };
+
+        const res = await documentClient.put(params).promise();
+
+        if (!res){
+            throw Error(`Error, Gagal menyimpan data dengan ${ID} pada table ${TableName}`)
+        }
+
+        return data;
     }
 }
 

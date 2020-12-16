@@ -7,3 +7,6 @@ jspm_packages
 
 #Note
 .note.txt
+
+#REST API TEST
+.apitest.rest
