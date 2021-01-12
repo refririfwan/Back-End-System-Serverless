@@ -36,8 +36,8 @@ function getData(keyword){
 
 function updateUI(data){
     const cards = showCards(data);
-    const movieContainer = document.querySelector('.data-container')
-    movieContainer.innerHTML = cards
+    const dataContainer = document.querySelector('.data-container')
+    dataContainer.innerHTML = cards
 }
 
 function showCards(m) {
